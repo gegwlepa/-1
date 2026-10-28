@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #360d94;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==== HEADER ==== */
+header {
+  background: #200266;
+  padding: 16px 24px;
+
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+nav a {
+  color: #555;
+  text-decoration: none;
+  margin-left: 12px;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+nav a:hover,
+nav a.active {
+  background: #44007cd5;
+  color: #2c3e50;
+}
+
+/* ==== HERO SECTION ==== */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #960783;
+  border-bottom: 1px solid #640481;
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 12px;
+}
+
+.hero h2 {
+  font-size: 22px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 500px;
+  margin: 0 auto 20px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* ==== MAIN ==== */
+main {
+  flex: 1;
+  padding: 30px 20px;
+  max-width: 960px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.title {
+  font-size: 24px;
+  color: #2c3e50;
+  margin: 30px 0 20px;
+  text-align: center;
+}
+
+/* ==== CARDS ==== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #dfe1e5;
+  transition: box-shadow 0.2s, transform 0.2s;
+  text-align: center;
+}
+
+.card .icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+  color: #2c3e50;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.card small {
+  display: block;
+  margin-top: 10px;
+  color: #999;
+  font-size: 12px;
+  font-style: italic;
+}
